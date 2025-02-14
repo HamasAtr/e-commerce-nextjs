@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "~react-medium-image-zoom/dist/styles.css";
+
+@layer base {
+  :root {
+    --background: 120 20% 98%;
+    --foreground: 120 20% 10%;
+    --card: 120 20% 98%;
+    --card-foreground: 120 20% 10%;
+    --popover: 120 20% 98%;
+    --popover-foreground: 120 20% 10%;
+    --primary: 140 70% 40%;
+    --primary-foreground: 120 20% 98%;
+    --secondary: 120 10% 90%;
+    --secondary-foreground: 140 20% 20%;
+    --muted: 120 10% 90%;
+    --muted-foreground: 140 10% 40%;
+    --accent: 120 10% 90%;
+    --accent-foreground: 140 20% 20%;
+    --destructive: 0 80% 50%;
+    --destructive-foreground: 120 20% 98%;
+    --border: 120 10% 85%;
+    --input: 120 10% 85%;
+    --ring: 140 70% 40%;
+    --radius: 0rem;
+    --chart-1: 140 60% 45%;
+    --chart-2: 160 50% 40%;
+    --chart-3: 180 40% 35%;
+    --chart-4: 200 50% 50%;
+    --chart-5: 220 55% 45%;
+  }
+
+  .dark {
+    --background: 140 20% 10%;
+    --foreground: 120 20% 98%;
+    --card: 140 20% 10%;
+    --card-foreground: 120 20% 98%;
+    --popover: 140 20% 10%;
+    --popover-foreground: 120 20% 98%;
+    --primary: 140 80% 35%;
+    --primary-foreground: 120 20% 98%;
+    --secondary: 140 10% 20%;
+    --secondary-foreground: 120 20% 98%;
+    --muted: 140 10% 20%;
+    --muted-foreground: 140 10% 50%;
+    --accent: 140 10% 20%;
+    --accent-foreground: 120 20% 98%;
+    --destructive: 0 72.2% 50.6%;
+    --destructive-foreground: 120 20% 98%;
+    --border: 140 10% 20%;
+    --input: 140 10% 20%;
+    --ring: 140 80% 35%;
+    --chart-1: 150 70% 40%;
+    --chart-2: 170 60% 35%;
+    --chart-3: 190 50% 40%;
+    --chart-4: 210 55% 50%;
+    --chart-5: 230 60% 45%;
+
+    [data-rmiz-modal-overlay="visible"] {
+      background-color: black;
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
