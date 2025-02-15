@@ -14,12 +14,12 @@ import { collections } from "@wix/stores";
 import Link from "next/link";
 
 interface MainNavigationProps {
-  collections: collections.Collection[];
+  // collections: collections.Collection[];
   className?: string;
 }
 
 export default function MainNavigation({
-  collections,
+  // collections,
   className,
 }: MainNavigationProps) {
   return (
@@ -32,7 +32,7 @@ export default function MainNavigation({
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <NavigationMenuTrigger>Collections</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="p-4">
@@ -56,7 +56,7 @@ export default function MainNavigation({
               ))}
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
       </NavigationMenuList>
     </NavigationMenu>
   );

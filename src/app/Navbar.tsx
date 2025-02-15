@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-golf-ebikes.png";
 import SearchField from "@/components/SearchField";
 import UserButton from "@/components/UserButton";
 import { getWixServerClient } from "@/lib/wix-client.server";
@@ -26,7 +26,7 @@ export default async function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-5 p-5">
         <Suspense>
           <MobileMenu
-            collections={collections}
+            // collections={collections}
             loggedInMember={loggedInMember}
           />
         </Suspense>
@@ -36,7 +36,7 @@ export default async function Navbar() {
             <span className="text-xl font-bold">Golf Ebikes</span>
           </Link>
           <MainNavigation
-            collections={collections}
+            // collections={collections}
             className="hidden lg:flex"
           />
         </div>

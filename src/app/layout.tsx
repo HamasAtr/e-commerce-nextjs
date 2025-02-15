@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s | Golf Ebikes",
     absolute: "Golf Ebikes",
   },
-  description: "A full-stack e-commerce application built with Next.js 15",
+  description: "Golf Ebikes",
 };
 
 export default function RootLayout({

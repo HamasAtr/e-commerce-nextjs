@@ -18,12 +18,12 @@ import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
 interface MobileMenuProps {
-  collections: collections.Collection[];
+  // collections: collections.Collection[];
   loggedInMember: members.Member | null;
 }
 
 export default function MobileMenu({
-  collections,
+  // collections,
   loggedInMember,
 }: MobileMenuProps) {
   const pathname = usePathname();
@@ -68,7 +68,7 @@ export default function MobileMenu({
                   Shop
                 </Link>
               </li>
-              {collections.map((collection) => (
+              {/* {collections.map((collection) => (
                 <li key={collection._id}>
                   <Link
                     href={`/collections/${collection.slug}`}
@@ -77,7 +77,7 @@ export default function MobileMenu({
                     {collection.name}
                   </Link>
                 </li>
-              ))}
+              ))} */}
             </ul>
             <UserButton loggedInMember={loggedInMember} />
           </div>
